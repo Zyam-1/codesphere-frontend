@@ -94,13 +94,42 @@ const Navbar = () => {
         className="overflow-hidden md:hidden bg-white shadow-md"
       >
         <ul className="flex flex-col items-center space-y-4 py-4 text-gray-700 font-medium">
-          <li className="hover:text-blue-600 cursor-pointer">Home</li>
-          <li className="hover:text-blue-600 cursor-pointer">Services</li>
-          <li className="text-teal-500 border-b-2 border-teal-500 cursor-pointer">
-            Our Agency
+          <li
+            className={
+              path === "home" || path === ""
+                ? "text-teal-500 border-b-2 border-teal-500 cursor-pointer"
+                : "border-teal-500 cursor-pointer"
+            }
+          >
+            <Link to="/">Home</Link>
           </li>
-          <li className="hover:text-blue-600 cursor-pointer">Blog</li>
-          <li className="hover:text-blue-600 cursor-pointer">Contacts</li>
+          <li
+            className={
+              path === "services"
+                ? "text-teal-500 border-b-2 border-teal-500 cursor-pointer"
+                : "border-teal-500 cursor-pointer"
+            }
+          >
+            <Link to="/services">Services</Link>
+          </li>
+          <li
+            className={
+              path === "agency"
+                ? "text-teal-500 border-b-2 border-teal-500 cursor-pointer"
+                : "border-teal-500 cursor-pointer"
+            }
+          >
+            <Link to="/agency">Our Agency</Link>
+          </li>
+          <li
+            className={
+              path === "contact-us"
+                ? "text-teal-500 border-b-2 border-teal-500 cursor-pointer"
+                : "border-teal-500 cursor-pointer"
+            }
+          >
+            <Link to="/contact-us">Contact Us</Link>
+          </li>
         </ul>
       </motion.div>
     </nav>
