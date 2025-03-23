@@ -1,6 +1,9 @@
+// Author: Z. Maqsood
+// Description: Navbar component for the Codesphere website
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa"; // Importing icons from react-icons
 import { motion } from "framer-motion";
+import { Replace } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +22,9 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  let path = window.location.pathname;
+  path = path.replace("/", "");
+  console.log(path);
   return (
     <nav
       className={`navbar bg-white shadow-md fixed w-full z-50 ${isSticky ? "sticky" : ""}`}
@@ -35,9 +40,23 @@ const Navbar = () => {
 
         {/* Center - Navigation Links */}
         <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
-          <li className="hover:text-blue-600 cursor-pointer">Home</li>
+          <li
+            className={
+              path === "home"
+                ? "text-teal-500 border-b-2 text-teal-500 border-b-2 border-teal-500 cursor-pointer"
+                : " border-b-2 border-teal-500 cursor-pointer"
+            }
+          >
+            Home
+          </li>
           <li className="hover:text-blue-600 cursor-pointer">Services</li>
-          <li className="text-teal-500 border-b-2 border-teal-500 cursor-pointer">
+          <li
+            className={
+              path === "our-agency"
+                ? "text-teal-500 border-b-2 text-teal-500 border-b-2 border-teal-500 cursor-pointer"
+                : " border-teal-500 cursor-pointer"
+            }
+          >
             Our Agency
           </li>
           <li className="hover:text-blue-600 cursor-pointer">Blog</li>
