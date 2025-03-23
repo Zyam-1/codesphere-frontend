@@ -11,14 +11,14 @@ const stats = [
   },
   {
     percentage: 93,
-    title: "Social Media Marketing",
-    text: "Expand your reach with data-driven social media strategies. We create engaging content, manage campaigns, and optimize performance to boost brand awareness and traffic.",
+    title: "Custom Software Development",
+    text: "Tailored database design and optimization solutions that enhance performance, scalability, and data integrity for efficient business operations.",
     color: "green",
   },
   {
     percentage: 95,
-    title: "Custom Website Design",
-    text: "Create a powerful online presence with a custom-designed website tailored to your brand’s needs, ensuring a seamless user experience and optimized performance.",
+    title: "Database Design and Optimization",
+    text: "Expert custom software development tailored to your business needs—scalable, secure, and innovative solutions that drive growth and efficiency.",
     color: "orange",
   },
   {

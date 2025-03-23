@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const TopMenu = () => {
+  console.log("Powered By CodeSphere");
   return (
     <header className="bg-black text-white py-4 px-6 flex flex-col md:flex-row justify-between items-center">
       <span className="text-sm md:text-base border-b border-dotted border-gray-400 pb-1">

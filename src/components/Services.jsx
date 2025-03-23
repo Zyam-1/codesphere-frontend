@@ -16,13 +16,13 @@ const services = [
   },
   {
     icon: <Map className="text-yellow-500" size={50} />,
-    title: "Maps SEO",
-    text: "Get on the map! Help customers find and choose you by optimizing your Google Maps presence.",
+    title: "Custom Software Development",
+    text: "Expert custom software development tailored to your business needs—scalable, secure, and innovative solutions that drive growth and efficiency.",
   },
   {
     icon: <Anchor className="text-teal-500" size={50} />,
-    title: "Link Building & Content",
-    text: "Quality content and a robust backlink profile that will help to build trust and organic growth.",
+    title: "Database Design/Optimization",
+    text: "Tailored database design and optimization solutions that enhance performance, scalability, and data integrity for efficient business operations.",
   },
   {
     icon: <MonitorSmartphone className="text-blue-500" size={50} />,

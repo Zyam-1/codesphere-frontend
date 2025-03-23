@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes, FaSearch } from "react-icons/fa"; // Importing icons from react-icons
 import { motion } from "framer-motion";
-import { Replace } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ const Navbar = () => {
   }, []);
   let path = window.location.pathname;
   path = path.replace("/", "");
-  console.log(path);
+  // console.log(path);
   return (
     <nav
       className={`navbar bg-white shadow-md fixed w-full z-50 ${isSticky ? "sticky" : ""}`}
@@ -42,25 +42,40 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
           <li
             className={
-              path === "home"
-                ? "text-teal-500 border-b-2 text-teal-500 border-b-2 border-teal-500 cursor-pointer"
-                : " border-b-2 border-teal-500 cursor-pointer"
-            }
-          >
-            Home
-          </li>
-          <li className="hover:text-blue-600 cursor-pointer">Services</li>
-          <li
-            className={
-              path === "our-agency"
+              path === "home" || path === ""
                 ? "text-teal-500 border-b-2 text-teal-500 border-b-2 border-teal-500 cursor-pointer"
                 : " border-teal-500 cursor-pointer"
             }
           >
-            Our Agency
+            <Link to="/">Home</Link>
           </li>
-          <li className="hover:text-blue-600 cursor-pointer">Blog</li>
-          <li className="hover:text-blue-600 cursor-pointer">Contacts</li>
+          <li
+            className={
+              path === "services"
+                ? "text-teal-500 border-b-2 text-teal-500 border-b-2 border-teal-500 cursor-pointer"
+                : " border-teal-500 cursor-pointer"
+            }
+          >
+            <Link to="/services">Services</Link>
+          </li>
+          <li
+            className={
+              path === "agency"
+                ? "text-teal-500 border-b-2 text-teal-500 border-b-2 border-teal-500 cursor-pointer"
+                : " border-teal-500 cursor-pointer"
+            }
+          >
+            <Link to="/agency">Our Agency</Link>
+          </li>
+          <li
+            className={
+              path === "contact-us"
+                ? "text-teal-500 border-b-2 text-teal-500 border-b-2 border-teal-500 cursor-pointer"
+                : " border-teal-500 cursor-pointer"
+            }
+          >
+            <Link to="/contact-us">Contact Us</Link>
+          </li>
         </ul>
 
         {/* Right Section - Search Icon & Mobile Menu Button */}

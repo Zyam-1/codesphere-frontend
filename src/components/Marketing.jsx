@@ -1,6 +1,8 @@
 import { CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import offersImage from "./assets/offers1.png";
+import openWhatsApp from "../utils";
+
 const Marketing = () => {
   return (
     <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center gap-10">
@@ -35,6 +37,7 @@ const Marketing = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="mt-6 bg-teal-500 text-white px-6 py-2 rounded-lg shadow-lg hover:bg-teal-600"
+          onClick={openWhatsApp}
         >
           GET A QUOTE
         </motion.button>

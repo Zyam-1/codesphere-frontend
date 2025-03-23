@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import openWhatsApp from "../utils";
+import { useNavigate } from "react-router-dom";
 // Import your images here
 import slider1 from "./assets/slider1.png";
 import slider2 from "./assets/slider2.png";
@@ -14,8 +15,8 @@ import slider4 from "./assets/slider4.png";
 
 const slides = [
   {
-    title: "Pay Per Click (PPC) Management",
-    text: "Pay Per Click has an instant impact and gives your brand a much larger reach and exposure as a result of first page exposure on major search engines.",
+    title: "Custom Software Development",
+    text: "Expert custom software development tailored to your business needs—scalable, secure, and innovative solutions that drive growth and efficiency.",
     image: slider1,
     button1: "Learn More",
     button2: "Get Started",
@@ -48,6 +49,7 @@ const slides = [
 
 const Slider = () => {
   const swiperRef = useRef(null);
+  let navigate = useNavigate();
 
   const goToSlide = (index) => {
     if (swiperRef.current) {
@@ -79,11 +81,19 @@ const Slider = () => {
                 <h2 className="text-3xl font-bold mb-4">{slide.title}</h2>
                 <p className="mb-4">{slide.text}</p>
                 <div className="flex gap-4">
-                  <button className="bg-black text-white px-4 py-2 rounded-md">
+                  <button
+                    onClick={openWhatsApp}
+                    className="bg-black text-white px-4 py-2 rounded-md cursor-pointer"
+                  >
                     {slide.button1}
                   </button>
                   {slide.button2 && (
-                    <button className="bg-white text-black px-4 py-2 rounded-md">
+                    <button
+                      onClick={() => {
+                        navigate("/services");
+                      }}
+                      className="bg-white text-black px-4 py-2 rounded-md cursor-pointer"
+                    >
                       {slide.button2}
                     </button>
                   )}
@@ -113,7 +123,7 @@ const Slider = () => {
           className="w-full md:w-1/4 p-6 bg-gray-100 cursor-pointer hover:opacity-80"
           onClick={() => goToSlide(0)}
         >
-          <h2 className="text-black">PPC Management</h2>
+          <h2 className="text-black">Custom Software Development</h2>
         </div>
         <div
           className="w-full md:w-1/4 p-6 bg-teal-400 cursor-pointer hover:opacity-80"

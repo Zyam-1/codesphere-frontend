@@ -4,9 +4,9 @@ const LoadingLine = () => {
   return (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        // display: "flex",
+        // justifyContent: "center",
+        // alignItems: "center",
         marginTop: "1rem",
       }}
     >

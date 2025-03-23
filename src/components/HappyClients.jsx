@@ -5,19 +5,19 @@ import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
   {
-    text: "They got our vision at once and started planning based on it. The team is responsive, knowledgeable, and genuinely wants to see our success. I couldn't be more pleased with the outcome!",
-    name: "Shahab Ul Din Farooqi",
-    position: "Lead Manager",
+    text: "From the very beginning, CodeSphere's professionalism, dedication, and expertise were evident. Seamless communication, attention to detail, and commitment to delivering high-quality results made the entire experience exceptional. We are extremely satisfied with the final outcome and look forward to future collaborations!",
+    name: "Ibrahim Ahmad",
+    position: "Client",
   },
   {
-    text: "The dedication and expertise they brought to our project were outstanding. Every detail was handled with precision, and we achieved results beyond our expectations!",
-    name: "Ayesha Khan",
-    position: "Project Coordinator",
+    text: "We had an excellent experience working with CodeSphere. Their expertise in software development was evident in every aspect of the project. Their problem-solving skills, professionalism, and commitment to quality significantly impacted the project’s success. Highly recommended!",
+    name: "Shiza Sohail",
+    position: "Client",
   },
   {
-    text: "Professional, creative, and always willing to go the extra mile. Working with them was an absolute pleasure, and we look forward to future collaborations!",
-    name: "Michael Smith",
-    position: "Marketing Head",
+    text: "CodeSphere was evident in every aspect of the development process. From understanding our requirements to delivering a well-structured and efficient solution, they ensured that everything was executed flawlessly.",
+    name: "Ahad Khan",
+    position: "Client",
   },
 ];
 

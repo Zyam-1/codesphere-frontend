@@ -6,6 +6,7 @@ import arrow from "./assets/arrow.svg";
 import analytics from "./assets/analytics_chart_stats_statistics_6.svg";
 import robot from "./assets/robot_artificial_intelligence_ai_science.svg";
 import strategy from "./assets/strategy_plan_management.svg";
+import openWhatsApp from "../utils";
 
 const ServiceSection = () => {
   const services = [
@@ -25,7 +26,7 @@ const ServiceSection = () => {
     },
     {
       title: "TECHNOLOGY",
-      text: "Using state-of-the-art SEO tools and technology, we audit your website in minute detail, track the performance of your site, and provide an advanced technical SEO solution.",
+      text: "Using state-of-the-art tools and technology, we audit your website in minute detail, track the performance of your site, and provide an advanced technical solution.",
       color: "#63b3ed",
       // icon: "🤖",
       icon: robot,
@@ -45,7 +46,7 @@ const ServiceSection = () => {
   return (
     <div className="container mx-auto p-12 md:p-20">
       <h2 className="text-center text-3xl md:text-4xl font-bold">
-        Affordable SEO Services Packages
+        Affordable Services Packages
       </h2>
       <LoadingLine />
 
@@ -81,6 +82,7 @@ const ServiceSection = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={openWhatsApp}
           // textAlignment="center"
           className="mt-6 bg-teal-500 text-white px-6 py-2 rounded-lg shadow-lg hover:bg-teal-600"
         >
