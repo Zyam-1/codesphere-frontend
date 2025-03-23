@@ -1,0 +1,31 @@
+.loading-line-container {
+    width: 7rem;
+    height: 2px; /* Adjust the height of the line */
+    background-color: #e0e0e0; /* Background color of the line */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.loading-line {
+    width: 50%; /* Adjust the width of the loading line */
+    height: 100%;
+    background-color: #007bff; /* Color of the loading line */
+    position: absolute;
+    left: 50%; /* Start from the center */
+    transform: translateX(-50%); /* Center the line */
+    animation: loading 2s infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: translateX(-100%); /* Move left */
+    }
+    100% {
+        transform: translateX(0%); /* Move right */
+    }
+}
+
+.circleHover {
+    box-shadow: 18px 21px 26px -11px rgba(0, 0, 0, 0.75);
+}
