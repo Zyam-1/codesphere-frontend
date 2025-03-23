@@ -48,10 +48,17 @@ const ServiceSection = () => {
       <h2 className="text-center text-3xl md:text-4xl font-bold">
         Affordable Services Packages
       </h2>
-      <LoadingLine />
-
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <LoadingLine />
+      </div>
       <p className="text-center text-lg md:text-xl text-gray-600 mt-4">
-        Get the results you need without spending a fortune! Our low-cost SEO
+        Get the results you need without spending a fortune! Our low-cost
         service packages are designed in line with your budget but intensify
         maximum impact.
       </p>

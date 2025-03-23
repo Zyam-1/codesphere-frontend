@@ -7,6 +7,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import LoadingLine from "./LoadingLine";
 
 const Footer = () => {
   return (
@@ -16,6 +17,7 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-semibold">CodeSphere !</h2>
           <div className="w-16 h-1 bg-teal-400 mt-2 mb-4"></div>
+
           <p className="text-gray-400 text-sm leading-relaxed">
             At CodeSphere, we have over 8 years of experience and a track record
             of serving 150+ clients. Our commitment to excellence and attention
@@ -45,7 +47,7 @@ const Footer = () => {
             <p>▶ Mobile App Development</p>
             <p>▶ Content Management</p>
             <p>▶ Web Development</p>
-            <p>▶ Blog Managemen</p>
+            <p>▶ Blog Management</p>
           </div>
         </div>
       </div>
